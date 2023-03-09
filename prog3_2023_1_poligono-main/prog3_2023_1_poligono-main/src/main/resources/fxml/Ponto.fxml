@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="633.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.PontoController">
+   <children>
+      <Line endX="100.0" layoutX="322.0" layoutY="328.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="323.0" layoutY="293.0" rotate="90.0" startX="-100.0" />
+      <Label layoutX="348.0" layoutY="285.0" text="1° Quadrante" />
+      <Label layoutX="222.0" layoutY="285.0" text="2° Quadrante" />
+      <Label layoutX="348.0" layoutY="357.0" text="4° Quadrante" />
+      <Label layoutX="222.0" layoutY="357.0" text="3° Quadrante" />
+      <Label layoutX="408.0" layoutY="323.0" text="x" />
+      <Label layoutX="417.0" layoutY="319.0" rotate="-90.0" text="V" />
+      <Label layoutX="319.0" layoutY="184.0" rotate="-180.0" text="V" />
+      <Label layoutX="325.0" layoutY="192.0" text="y" />
+      <TextArea layoutX="496.0" layoutY="318.0" prefHeight="109.0" prefWidth="133.0" text="1° Quadrante:  X e Y &gt; 0&#10;2° Quadrante:  X&lt;0 e Y&gt;0&#10;3° Quadrante:  X e Y &lt; 0&#10;4° Quadrante: X&gt;0 e Y&lt;0&#10;Eixo de X: X≠0 e Y = 0&#10;Eixo de Y: X = 0 e Y≠0&#10;Origem: X e Y = 0">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="64.0" layoutY="48.0" text="Ponto X:" />
+      <Label layoutX="63.0" layoutY="79.0" text="Ponto Y:" />
+      <TextField fx:id="TxtX" layoutX="136.0" layoutY="43.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="TxtY" layoutX="136.0" layoutY="74.0" prefHeight="26.0" prefWidth="98.0" />
+      <Label layoutX="413.0" layoutY="49.0" text="Distancia:" />
+      <Label layoutX="415.0" layoutY="78.0" text="Localizao:" />
+      <Button layoutX="267.0" layoutY="58.0" mnemonicParsing="false" onAction="#BtnCalcular_click" text="Calcular" />
+      <TextField fx:id="TxtDistancia" layoutX="477.0" layoutY="43.0" prefHeight="26.0" prefWidth="98.0" />
+      <TextField fx:id="TxtLocalizao" layoutX="477.0" layoutY="73.0" prefHeight="26.0" prefWidth="98.0" />
+      <Label layoutX="495.0" layoutY="21.0" text="Resultado:" />
+      <Label layoutX="58.0" layoutY="20.0" text="Insira os dados para a realização do calculo:" />
+   </children>
+</Pane>

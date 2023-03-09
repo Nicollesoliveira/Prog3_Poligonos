@@ -1,0 +1,38 @@
+<diagram program="umletino" version="15.0.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>10</y><w>300</w><h>180</h></coordinates><panel_attributes>Ponto
+--
+- x: Double
+- y: Double
+--
++ Ponto(x: Double, y: Double)
++ Ponto()
++ getX(): Double
++ getY(): Double
++ getLocalizacao(): String
++ getDistancia(Ponto p): Double
++ getDistancia(Double x, Double y): Double</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>420</x><y>50</y><w>300</w><h>120</h></coordinates><panel_attributes>Reta
+--
+--
++ Reta(p1: Ponto, p2: Ponto)
++ Reta(x1: Double, y1: Double, x2: Double, y2: Double)
++ getP1(): Ponto
++ getP2(): Ponto
++ getTamanho(): Double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>80</y><w>150</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+-p1
+m1= 1..1</panel_attributes><additional_attributes>10;20;130;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>80</x><y>330</y><w>300</w><h>120</h></coordinates><panel_attributes>Quadrado
+--
+--
++ Quadrado(lado: Reta)
++ getLado(): Reta
++ getArea(): Double
++ getPerimetro(): Double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>160</y><w>300</w><h>190</h></coordinates><panel_attributes>lt=&lt;-
+#lado
+m1=1</panel_attributes><additional_attributes>280;10;10;170</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>530</y><w>300</w><h>120</h></coordinates><panel_attributes>Retangulo
+--
+--
++ Retangulo(lado: Reta, altura: Reta)
++ getAltura(): Reta
++ getArea(): Double
++ getPerimetro(): Double</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>440</y><w>230</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;10;210;90</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>160</y><w>140</w><h>390</h></coordinates><panel_attributes>lt=&lt;-
+-altura
+m1=1</panel_attributes><additional_attributes>120;10;10;370</additional_attributes></element><element><id>Relation</id><coordinates><x>290</x><y>100</y><w>150</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes><additional_attributes>10;40;130;10</additional_attributes></element></diagram>
