@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.femass.controller.MenuController">
+   <children>
+      <Button layoutX="24.0" layoutY="167.0" mnemonicParsing="false" onAction="#BtnPonto" prefHeight="79.0" prefWidth="124.0" text="Ponto" />
+      <Button layoutX="167.0" layoutY="167.0" mnemonicParsing="false" onAction="#BtnReta" prefHeight="79.0" prefWidth="124.0" text="Reta" />
+      <Button layoutX="308.0" layoutY="167.0" mnemonicParsing="false" onAction="#BtnQuadrado" prefHeight="79.0" prefWidth="124.0" text="Quadrado" />
+      <Button layoutX="450.0" layoutY="167.0" mnemonicParsing="false" onAction="#BtnRetangulo" prefHeight="79.0" prefWidth="124.0" text="Retângulo" />
+      <Label layoutX="172.0" layoutY="49.0" text="Olá, seja bem-vindo(a)! " textFill="#60d3d0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="124.0" text="Escolha a opção do polígono desejado:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Circle fill="#60d3d0" layoutY="378.0" radius="85.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#60d3d0" layoutX="148.0" layoutY="386.0" radius="85.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#60d3d0" layoutX="291.0" layoutY="386.0" radius="85.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#60d3d0" layoutX="440.0" layoutY="386.0" radius="85.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+      <Circle fill="#60d3d0" layoutX="595.0" layoutY="378.0" radius="85.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+   </children>
+</Pane>
